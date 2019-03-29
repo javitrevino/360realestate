@@ -101,6 +101,6 @@ export default {
 
 <style scoped>
 .container {
-  margin: 10px;
+  margin: 190px;
 }
 </style>
