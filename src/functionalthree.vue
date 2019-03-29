@@ -1,8 +1,9 @@
 <template>
-  <div id="container"></div>
+  <div id="container-three"></div>
 </template>
 
 <script>
+e;
 var THREE = require("three");
 
 var camera, scene, renderer;
@@ -100,6 +101,6 @@ export default {
 
 <style scoped>
 .container {
-  margin: 0px;
+  margin: 10px;
 }
 </style>
