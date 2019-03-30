@@ -51,7 +51,7 @@ async function loadPostsCollection() {
     const client = await MongoClient.connect(('mongodb+srv://monktrev:UjnIwqzYgbSxxZXg@cluster0-lptwp.mongodb.net/test?retryWrites=true'), {
         useNewUrlParser: true
     });
-    return client.db("threeapp").collection("posts");
+    return client("threeapp").collection("posts");
 }
 
 module.exports = router;
