@@ -3,6 +3,7 @@ import VueRouter from 'vue-router';
 import App from './App.vue'
 import BasicComponent from './components/BasicComponent.vue'
 import PostComponent from './components/PostComponent.vue'
+import TestComponent from './components/TestComponent.vue'
 
 
 //router 
@@ -10,6 +11,7 @@ Vue.use(VueRouter);
 
 const routes = [
   { path: '/basic', component: BasicComponent },
+  { path: '/test', component: TestComponent },
   { path: '/', component: PostComponent }
 ]
 

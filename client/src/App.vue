@@ -5,6 +5,7 @@
 
     <router-link to="/">Mongo</router-link>
     <router-link to="/basic">Vue</router-link>
+    <router-link to="/test">Test</router-link>
 
     <router-view></router-view>
   </div>
