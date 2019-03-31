@@ -45,6 +45,9 @@ export default {
     }
   },
   methods: {
+    goBack() {
+      window.history.length > 1 ? this.$router.go(-1) : this.$router.push("/");
+    },
     async createPost() {
       await PostService.insertPost(this.text);
       this.posts = await PostService.getPosts();
@@ -58,7 +61,7 @@ export default {
 };
 </script>
 
-<!-- EJEMPLO DE COMO FUNCIONA Add "scoped" attribute to limit CSS to this component only -->
+<!--Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 div.container {
   max-width: 800px;

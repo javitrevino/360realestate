@@ -23,35 +23,22 @@ router.post('/', async (req, res) => {
 
 });
 
-
-//delete post
-
 router.delete('/:id', async (req, res) => {
     const posts = await loadPostsCollection();
     await posts.deleteOne({ _id: new mongodb.ObjectID(req.params.id) });
     res.status(200).send();
 });
 
-
-// mongo cluster connection
-
-
-const MongoClient = require('mongodb').MongoClient;
-const uri = "mongodb+srv://adolfotrev:zhFtBfOkvyyMin5k@cluster0-lptwp.mongodb.net/test?retryWrites=true";
-const client = new MongoClient(uri, { useNewUrlParser: true });
-client.connect(err => {
-    const collection = client.db("threeapp").collection("posts");
-    // perform actions on the collection object
-    client.close();
-
-});
-
-// async function to load posts
 async function loadPostsCollection() {
-    const client = await MongoClient.connect(('mongodb+srv://adolfotrev:zhFtBfOkvyyMin5k@cluster0-lptwp.mongodb.net/test?retryWrites=true'), {
-        useNewUrlParser: true
-    });
-    return client("threeapp").collection("posts");
+    const client = await mongodb.MongoClient.connect(
+        'mongodb+srv://notchodomingo:pg7UeFaHYsuK6ZOq@cluster0-lptwp.mongodb.net/test?retryWrites=true',
+        {
+            useNewUrlParser: true
+        }
+    );
+
+    return client.db('threeux').collection('content');
+
 }
 
 
