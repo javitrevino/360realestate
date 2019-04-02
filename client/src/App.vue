@@ -1,12 +1,9 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <hr>
-
-    <router-link to="/">Mongo</router-link>
-    <router-link to="/basic">Vue</router-link>
-    <router-link to="/test">Test</router-link>
-
+    <div class="main-menu">
+      <router-link to="/">Base de datos</router-link>
+      <router-link to="/basic">3D</router-link>
+    </div>
     <router-view></router-view>
   </div>
 </template>
@@ -40,5 +37,8 @@ export default {
 
 a {
   margin: 10px;
+  text-decoration: none;
+  font-size: 24px;
+  color: lightcoral;
 }
 </style>

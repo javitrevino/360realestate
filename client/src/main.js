@@ -6,8 +6,10 @@ import PostComponent from './components/PostComponent.vue'
 import TestComponent from './components/TestComponent.vue'
 
 
-//router 
 Vue.use(VueRouter);
+
+// vue bindings for
+
 
 const routes = [
   { path: '/basic', component: BasicComponent },
