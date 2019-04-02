@@ -21,6 +21,10 @@ export default {
 </script>
 
 <style>
+.main-menu {
+  margin: 100px;
+}
+
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -36,9 +40,10 @@ export default {
 }
 
 a {
-  margin: 10px;
+  margin: 30px;
+  font-weight: bold;
   text-decoration: none;
   font-size: 24px;
-  color: lightcoral;
+  color: lightseagreen;
 }
 </style>

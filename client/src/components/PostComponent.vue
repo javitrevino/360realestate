@@ -1,7 +1,7 @@
 <template>
   <div class="container">
-    <h1>Publicar y borrar posts de MongoDB Atlas DB</h1>
-    <h2>Apex</h2>
+    <h1>MongoDB</h1>
+
     <div class="create-post">
       <label for="create-post">Nombre...</label>
       <input type="text" id="create-post" v-model="text" placeholder="Crear un post">
@@ -91,7 +91,7 @@ div.created-at {
 }
 
 p.text {
-  font-size: 12px;
+  font-size: 18px;
   font-weight: 700;
   margin-bottom: 0;
 }
